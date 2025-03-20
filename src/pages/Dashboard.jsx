@@ -10,7 +10,7 @@ import {
   createExpense,
   deleteItem,
   fetchData,
-  waait,
+  wait,
 } from "../helper";
 import BudgetItem from "../components/BudgetItem";
 import Table from "../components/Table";
@@ -22,7 +22,7 @@ export function dashboardLoader() {
   return { userName, budgets, expenses };
 }
 export async function dashboardAction({ request }) {
-  await waait();
+  await wait();
   const data = await request.formData();
   const { _action, ...values } = Object.fromEntries(data);
   // new user submission

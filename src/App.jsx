@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: "budget/:id", // in colon (:) what you pass in dynamic
+        path: "budget/:id",
         element: <BudgetPage />,
         loader: budgetLoader,
         action: budgetAction,

@@ -1,5 +1,5 @@
 // artifical wait as data store to local items
-export const waait = () =>
+export const wait = () =>
   new Promise((res) => setTimeout(res, Math.random() * 700));
 
 const generateRandomColor = () => {
